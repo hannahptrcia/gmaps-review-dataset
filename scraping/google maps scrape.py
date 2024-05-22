@@ -87,7 +87,7 @@ driver.quit()
 overall_place_name = input("Masukkan nama lokasi: ")
 
 # Save the extracted reviews data to a CSV file
-csv_file = 'PAPUASELATAN_KapsulWaktu.csv'
+csv_file = 'review.csv'
 with open(csv_file, mode='w', newline='', encoding='utf-8') as file:
     writer = csv.DictWriter(file, fieldnames=['location_name', 'name', 'date', 'rating', 'review_text'])
     writer.writeheader()
